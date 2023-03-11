@@ -4451,7 +4451,7 @@ body > main:nth-child(6) > div > div > div > div{
     font-weight: var(--fw-700);
   }
 
-  .rigth,
+  /* .rigth,
   .summary-totals{
     margin: 0 auto;
     text-align: center;
@@ -4459,7 +4459,7 @@ body > main:nth-child(6) > div > div > div > div{
 
   .summary-totals{
     padding: 0;
-  }
+  } */
   
 }
 
