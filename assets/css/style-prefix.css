@@ -141,6 +141,10 @@ input[type=search]::-webkit-search-results-decoration {
           box-sizing: border-box;
 }
 
+textarea{
+  resize: none;
+}
+
 a { text-decoration: none; }
 
 li { list-style: none; }
@@ -3366,7 +3370,22 @@ figure .product-display .w-100{
 
 
 
-/* ---------------------------------------------- PAGE DU PANIER ------------------------------------------- */
+/* ----------------------------------------------CHECKOUT PAGE  ------------------------------------------- */
+
+.checkout{
+  margin: 2em 0;
+}
+
+.checkout .left{
+  padding: 4em 1em;
+  background-color: var(--light-bg-color);
+}
+
+
+.checkout .item{
+  width: 100%;
+}
+
 
 
 
@@ -3881,12 +3900,139 @@ p.product-price{
 }
 
 
+.checkout .left h2,
+.rigth h2{
+  font-weight: normal;
+  margin-bottom: 1.5em;
+}
+
+.checkout .left label{
+  font-size: var(--fs-6);
+  position: relative;
+  width: fit-content;
+}
+
+.checkout .left label span{
+  position: absolute;
+  top: 0;
+  right: -10px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--bittersweet);
+  border-radius: var(--radius-6);
+}
+
+
+.checkout-form-left p{
+  margin-block: 30px;
+}
+
+.checkout-form-left p input
+{
+  border: none;
+  outline: none;
+  padding: 8px 15px;
+  font-size: var(--fs-7);
+  -webkit-appearance: none;
+}
+
+.checkout-form-left p select{
+  border: none;
+  outline: none;
+  width: 100%;
+  padding: 8px 15px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.checkout-form-left p textarea{
+  width: 100%;
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 8px 15px;
+  font-size: var(--fs-5);
+  line-height: 1.2;
+}
+
+body > main:nth-child(6) > div > div > div > div{
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.checkout p :where(input, textarea){
+  background-color: rgba(255 255 255 / 50%);
+}
+
+.checkout p input:is(:hover, :focus, :focus-visible){
+  background-color: var(--white);
+}
+
+.primary-checkout{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 20px;
+  padding: 5px 15px;
+}
+
+.primary-checkout button{
+  display: block;
+  border: 0;
+  outline: 0;
+  cursor: pointer !important;
+  width: 100%;
+  max-width: 280px;
+  font-size: 1rem;
+
+
+}
+
+.checkout .item.rigth{
+  padding: 5em 0 0;
+}
+
+
+.summary-totals ul{
+  max-width: 335px;
+  line-height: 2;
+  margin-bottom: 3em;
+  padding-bottom: 2em;
+  border-bottom: 1px solid var(--sonic-silver);
+}
+
+
+.rigth ul li span{
+  display: inline;
+}
+
+.summary-totals li{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+
+.price span{
+  display: inline;
+}
 
 
 
+.price span{
+  font-size: var(--fs-5);
+}
 
+.item-content p{
+  margin-bottom: 5px;
+}
 
-
+#country{
+  font-size: var(--fs-5);
+}
 
 /*-----------------------------------*\
   #RESPONSIVE
@@ -4256,6 +4402,15 @@ p.product-price{
   /* .page-not-found p{ width: 100%; }
    */
 
+   body > main:nth-child(6) > div > div > div > div{
+
+    flex-direction: column;
+  }
+
+  .rigth h2{
+    font-size: 1.3rem;
+    font-weight: var(--fw-700);
+  }
   
 }
 
@@ -4493,6 +4648,25 @@ p.product-price{
 
   /* .page-not-found p{ width: 100%; } */
 
+  .checkout .item{
+    flex: 0 0 50%;
+    width: 50%;
+  }
+
+  .is_sticky{
+    position: sticky;
+    top: 2em;
+  }
+
+
+  .checkout .item.rigth{
+    padding: 5em 0 0 ;
+  }
+  
+  .rigth h2{
+    font-size: 1.6rem;
+  }
+  
 }
 
 
@@ -4647,6 +4821,8 @@ p.product-price{
   .purchase-info input{
     width:45%;
   }
+
+
 
 }
 
