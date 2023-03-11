@@ -1058,22 +1058,34 @@
                                 <input type="tel" name="phone" id="phone" class="phone" required placeholder="Votre telephone">
                             </p>
                             <p>
-                                <label for="address">Adresse <span></span> </label>
-                                <input type="text" name="address" id="address" class="address" required placeholder="Votre adresse">
+                                <label for="country" class="country">Pays de residence <span></span></label>
+                                <select name="country" id="country">
+                                    <optgroup id="africa" label="Afrique">
+                                        <option value="guinee">Guineé</option>
+                                        <option value="nigeria">Nigeria</option>
+                                        <option value="senegal">Sénégal</option>
+                                        <option value="mali">Mali</option>
+                                        <option value="ghana">Ghana</option>
+                                    </optgroup>
+
+                                    <optgroup id="europe" label="Europe">
+                                        <option value="france">France</option>
+                                        <option value="italie">Italie</option>
+                                        <option value="espagne">Espagne</option>
+                                        <option value="allemagne">Allemagne</option>
+                                        <option value="portugal">Portugal</option>
+                                    </optgroup>
+                                </select>
                             </p>
                             <p>
                                 <label for="city">Ville <span></span></label>
                                 <input type="text" name="city" id="city" class="city" required placeholder="Votre ville">
                             </p>
                             <p>
-                                <label for="country" class="country">Pays de residence <span></span></label>
-                                <select name="country" id="country">
-                                    <option value=""></option>
-                                    <option value="guinea">Guineé</option>
-                                    <option value="mali">Mali</option>
-                                    <option value="ghana">Ghana</option>
-                                </select>
+                                <label for="address">Adresse <span></span> </label>
+                                <input type="text" name="address" id="address" class="address" required placeholder="Votre adresse">
                             </p>
+                            
                             <p>
                                 <label for="zip">Code postal</label>
                                 <input type="number" inputmode="numeric" name="zip" id="zip" class="zip" required placeholder="Votre code postal" style="width: 100%;">
