@@ -4446,7 +4446,7 @@ body > main:nth-child(6) > div > div > div > div{
 
   .price-final{
     color: var(--black);
-    font-size: var(--fs-5);
+    font-size: 15px;
     font-weight: var(--fw-700);
   }
   
