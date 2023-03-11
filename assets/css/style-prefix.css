@@ -4445,9 +4445,20 @@ body > main:nth-child(6) > div > div > div > div{
   }
 
   .price-final{
+    display: inline;
     color: var(--black);
-    font-size: 15px;
+    font-size: 1.2rem;
     font-weight: var(--fw-700);
+  }
+
+  .rigth,
+  .summary-totals{
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .summary-totals{
+    padding: 0;
   }
   
 }
