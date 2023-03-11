@@ -4004,6 +4004,12 @@ body > main:nth-child(6) > div > div > div > div{
   border-bottom: 1px solid var(--sonic-silver);
 }
 
+.summary-totals ul li span,
+.summary-totals ul li strong{
+  color: var(--black);
+}
+
+
 
 .rigth ul li span{
   display: inline;
@@ -4432,6 +4438,10 @@ body > main:nth-child(6) > div > div > div > div{
   .rigth h2{
     font-size: 1.3rem;
     font-weight: var(--fw-700);
+  }
+
+  .price-final{
+    font-size: var(--fs-5);
   }
   
 }
