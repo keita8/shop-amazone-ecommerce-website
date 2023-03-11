@@ -4042,7 +4042,8 @@ body > main:nth-child(6) > div > div > div > div{
 }
 
 
-.summary-totals ul li span{
+.summary-totals ul li span,
+.summary-totals ul li strong{
   color: var(--black);
 }
 
