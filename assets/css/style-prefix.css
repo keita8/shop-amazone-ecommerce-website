@@ -4032,7 +4032,29 @@ body > main:nth-child(6) > div > div > div > div{
 
 #country{
   font-size: var(--fs-5);
+  color: var(--black);
 }
+
+
+.summary-totals ul li span{
+  color: var(--black);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*-----------------------------------*\
   #RESPONSIVE
