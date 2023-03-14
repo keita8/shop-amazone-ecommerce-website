@@ -1044,18 +1044,18 @@
                 <div class="checkout flexwrap">
                     <div class="item left styled">
                         <h2>Adresse de livraison</h2>
-                        <form action="#" class="checkout-form-left" method="POST" novalidate>
+                        <form action="#" class="checkout-form-left" method="POST">
                             <p>
-                                <label for="email">Adresse email  <span></span> </label>
-                                <input type="email" name="email" id="email" class="email" required placeholder="Votre adresse email">
+                                <label for="email">Adresse email<span></span> </label>
+                                <input type="email" inputmode="email" name="email" id="email" class="email" required placeholder="Votre adresse email">
                             </p>
                             <p>
                                 <label for="name">Nom & prénom <span></span> </label>
-                                <input type="text" name="name" id="name" class="name" required placeholder="Votre nom et prénom">
+                                <input type="text" inputmode="text" name="name" id="name" class="name" required placeholder="Votre nom et prénom">
                             </p>
                             <p>
                                 <label for="phone">Telephone <span></span> </label>
-                                <input type="tel" name="phone" id="phone" class="phone" required placeholder="Votre telephone">
+                                <input type="tel" inputmode="tel" name="phone" id="phone" class="phone" required placeholder="Votre telephone">
                             </p>
                             <p>
                                 <label for="country" class="country">Pays de residence <span></span></label>
@@ -1087,12 +1087,12 @@
                             </p>
                             
                             <p>
-                                <label for="zip">Code postal</label>
-                                <input type="number" inputmode="numeric" name="zip" id="zip" class="zip" required placeholder="Votre code postal" style="width: 100%;">
+                                <label for="zip">Zip</label>
+                                <input type="number" inputmode="numeric" name="zip" id="zip" class="zip" required placeholder="Votre code postal (90100) " style="width: 100%;">
                             </p>
                             <p>
                                 <label for="message">Message</label>
-                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Laissez un message "  draggable="false"></textarea>
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Laissez un message (facultatif) "  draggable="false"></textarea>
                             </p>
 
                             <div class="primary-checkout" style="margin: 0 auto; text-align:center;">

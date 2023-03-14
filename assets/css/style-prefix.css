@@ -121,6 +121,16 @@
 }
 
 
+address{
+  font-size: normal;
+}
+
+
+address input{
+  font-size: normal;
+}
+
+
 input[type=search]::-webkit-search-cancel-button,
 input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-results-button,
@@ -4013,9 +4023,11 @@ body > main:nth-child(6) > div > div > div > div{
 
 .rigth ul li span{
   display: inline;
+  color: var(--black);
 }
 
 .summary-totals li{
+  color: var(--black);
   display: flex;
   justify-content: space-between;
 
@@ -4507,6 +4519,10 @@ body > main:nth-child(6) > div > div > div > div{
   .summary-totals{
     padding: 0;
   } */
+
+  body > main:nth-child(6) > div > div > div > div > div.item.left.styled > h2{
+    font-size: 1.5rem;
+  }
   
 }
 
