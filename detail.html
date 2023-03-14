@@ -1125,13 +1125,41 @@
             </ul>
           </div>
 
-          <div class="purchase-info">
-            <input type="number" name="qty" id="qty" class="qty" inputmode="numeric" min="1" max="100" value="1" placeholder="quantité">
-            <button type="submit" class="btn add-to-cart-btn" onclick="window.location='cart.html'">
-              <ion-icon name="bag-handle-outline"></ion-icon>
-              <span>Ajouter au panier</span>
-            </button>
-          </div>
+          
+
+          <form action="#" method="POST" class="variations">
+            <!-- <div class="product-detail-section">
+              <label for="color">couleur</label>
+              <select name="color" id="color" class="color" required>
+                <option value="couleur" disabled>couleur</option>
+                <option value="gris">gris</option>
+                <option value="marron">marron</option>
+                <option value="blanc">blanc</option>
+                <option value="vert">vert</option>
+              </select>
+            </div>
+            <div class="product-detail-section">
+              <label for="size">taille</label>
+              <select name="size" id="size" class="size" required>
+                <option value="taille" disabled>taille</option>
+                <option value="sm">sm</option>
+                <option value="l">l</option>
+                <option value="xl">xl</option>
+                <option value="xxl">xxl</option>
+              </select>
+            </div> -->
+
+            <div class="purchase-info">
+              <input type="number" name="qty" id="qty" class="qty" inputmode="numeric" min="1" max="100" value="1" placeholder="quantité" required>
+              <button type="submit" class="btn add-to-cart-btn" onclick="window.location='cart.html'">
+                <ion-icon name="bag-handle-outline"></ion-icon>
+                <span>Ajouter au panier</span>
+              </button>
+            </div>
+          </form>
+
+
+
 
 
         </div>
@@ -1488,7 +1516,7 @@
           </li>
         
           <li class="footer-nav-item">
-            <a href="#" class="footer-nav-link">Termse & conditions</a>
+            <a href="#" class="footer-nav-link">Termes & conditions</a>
           </li>
         
           <li class="footer-nav-item">
